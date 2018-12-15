@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="assets/css/variable.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/left-navbar.css" />
+    <link rel="stylesheet" href="assets/css/find-music.css" />
+    <link rel="stylesheet" href="assets/css/bottom.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    
+    <!-- link for html -->
+    <link rel="import" href="sections/bottom/bottom.html" />
+    <link rel="import" href="sections/navbar/left-navbar.html" />
+    <link rel="import" href="sections/main/search.html" />
+    <link rel="import" href="sections/main/findMusic/find-music.html" />
+    <link rel="import" href="sections/main/mv.html" />
+    <link rel="import" href="sections/main/friends.html" />
+    <link rel="import" href="sections/main/local-music.html" />
+    <link rel="import" href="sections/main/download.html" />
+    <link rel="import" href="sections/main/recent.html" />
+    <link rel="import" href="sections/main/cloud.html" />
+    <link rel="import" href="sections/main/electron.html" />
+    <link rel="import" href="sections/main/collection.html" />
+
+    <!-- link for js -->
+    <script src="./services/sysRequest.js"></script>
+</head>
+    <body>
+        <div class="content">
+            <div class="drag-area">
+                <div class="brand">
+                    <img src="./assets/icon/app.png" class="logo" draggable="false"/>
+                    <span>MusicBox</span>
+                </div>
+                <div class="do-win">
+                    <i class="small iconfont icon-checkbox"></i>
+                    <i class="full iconfont icon-circle"></i>
+                    <i class=" close iconfont icon-close"></i>
+                </div>
+            </div>
+            <div id="main"> 
+                <div id="left-nav" class="coustom-scroll-bar"></div>
+                <div id="center"></div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+    
+        <script>
+            require('./assets/imports');
+            require('./assets/topbar');
+            require('./assets/nav');
+        </script>
+
+    </body>
+</html>

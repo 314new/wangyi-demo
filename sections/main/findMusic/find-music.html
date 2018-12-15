@@ -1,0 +1,33 @@
+<template class="task-template">
+    <div class="js-content find-music-pannel">
+        <header class="switch-bar">
+            <ul>
+                <li>
+                    <span class="find-music-nav default-switch" data-content="suggest">个性推荐</span>
+                </li>
+                <li>
+                    <span class="find-music-nav" data-content="orders">歌单</span>
+                </li>
+                <li>
+                    <span class="find-music-nav" data-content="hoster">主播电台</span>
+                </li>
+                <li>
+                    <span class="find-music-nav" data-content="new-music">最新音乐</span>
+                </li>
+                <li>
+                    <span class="find-music-nav" data-content="singers">歌手</span>
+                </li>
+            </ul>
+        </header>
+        <div class="switch-content coustom-scroll-bar">
+            <div class="u-suggest u-show">个性推荐</div>
+            <div class="u-orders">歌单</div>
+            <div class="u-hoster">主播电台</div>
+            <div class="u-new-music">最新音乐</div>
+            <div class="u-singers">歌手</div>
+        </div>
+        <script>
+            require('./render-process/findMusic/find-music.js');
+        </script>
+    </div>
+</template>

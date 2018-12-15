@@ -1,0 +1,40 @@
+.left-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 100%;
+}
+.left-navbar section p {
+    letter-spacing: 1px;
+    font-size: 11px;
+    padding-left: 40px; 
+    color: rgba(255,255,255,0.8);
+}
+section {
+    margin-bottom: 30px;
+}
+section ul {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.left-navbar ul li {
+    display: block;
+    padding: 10px 0 10px 40px;
+    line-height: 18px;
+    box-sizing: content-box;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+.left-navbar li i {
+    font-size: 20px;
+    color: #ffffff;
+    pointer-events: none;
+}
+.left-navbar li span {
+    padding-left: 10px;
+    pointer-events: none;
+}
+/* li.js-active {
+    background: 
+} */
